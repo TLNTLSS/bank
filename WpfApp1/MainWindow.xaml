@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" MinHeight="250" MinWidth="400" Height="250" Width="400">
+    <Grid Margin="10">
+        <Label Content="Сумма вклада:" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" />
         
+        <TextBox Name="PrincipalAmountTextBox" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top" 
+                 Width="200" 
+                 Margin="0,30,0,0"/>
+
+        <Label Content="Годовая процентная ставка (%):" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="0,60,0,0" />
+        
+        <TextBox Name="InterestRateTextBox" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top" Width="200" Margin="0,90,0,0"/>
+
+        <Label Content="Срок (лет):" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="0,120,0,0" />
+        
+        <TextBox Name="YearsTextBox" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top" 
+                 Width="200" 
+                 Margin="0,150,0,0"/>
+
+        <Button Content="Рассчитать" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Bottom" 
+                Width="100" 
+                Click="Button_Click" />
+
+        <Label Content="Итоговая сумма:" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="220,30,0,0" />
+        
+        <TextBlock Name="ResultTextBlock" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="220,60,0,0" />
     </Grid>
 </Window>
